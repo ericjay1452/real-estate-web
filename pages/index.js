@@ -30,7 +30,14 @@ const Banner = ({purpose, ImageUrl, desc1, desc2, Linktext, link, title1, title2
 export default function Home() {
   return (
     <div className={`${styles.container}`}>
-       
+       <Banner 
+       purpose={"RENT A HOME"}
+       title1 = {"Rentals Home for"}
+       title2 = {"For Everyone"}
+       desc1 = {"Explore Apartments, Villa, Homes e.t.c"}
+       desc2 = {"and many more"}
+       Linktext = {"Explore Renting"}
+       />
     </div>
   )
 }
