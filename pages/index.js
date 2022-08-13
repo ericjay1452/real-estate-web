@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import {Flex, Box, Text, Button} from "@chakra-ui/react"
+import HomeImg from "../images/Home.jpg"
 
 const Banner = ({purpose, ImageUrl, desc1, desc2, Linktext, link, title1, title2}) =>(
  <Flex flexWrap={"flex"} justifyContent= "center" alignItems={"center"} m="10">
@@ -37,7 +38,21 @@ export default function Home() {
        desc1 = {"Explore Apartments, Villa, Homes e.t.c"}
        desc2 = {"and many more"}
        Linktext = {"Explore Renting"}
+       link = "/search?purpose=for-rent"
+       ImageUrl={HomeImg}
        />
+
+       <Banner 
+       purpose={"BUY A HOME"}
+       title1 = {"Find, Buy, & Own your"}
+       title2 = {"Dream Home"}
+       desc1 = {"Explore Apartments, Villa, Homes e.t.c"}
+       desc2 = {"and many more"}
+       Linktext = {"Explore Buying"}
+       link = "/search?purpose=for-sale"
+       ImageUrl={HomeImg}
+       />
+
     </div>
   )
 }
