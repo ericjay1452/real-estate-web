@@ -21,7 +21,7 @@ const Banner = ({purpose, ImageUrl, desc1, desc2, Linktext, link, title1, title2
    {desc1 } <br /> {desc2}
  </Text>
 
- <Button fontSize = "xl" bg={"blue.300"} color = "white">
+ <Button fontSize = "xl">
    <Link href={link} >{Linktext}</Link>
  </Button>
 </Box>
