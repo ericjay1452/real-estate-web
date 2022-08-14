@@ -10,6 +10,13 @@ const Navbar = () =>{
            <Box fontSize={"2xl"} fontWeight = {"bold"} color = {"blue.400"}>
             <Link href="/" paddingLeft={"2"}>Real-Estate</Link> 
            </Box>
+           <Spacer />
+
+           <Box>
+            <Menu>
+                <MenuButton as = {IconButton} icon = {<FcHome />} variant = {"outlined"} color = "red.400"/>
+            </Menu>
+           </Box>
         </Flex>
     )
 }
