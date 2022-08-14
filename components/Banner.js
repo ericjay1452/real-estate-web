@@ -19,7 +19,7 @@ const Banner = ({purpose, ImageUrl, desc1, desc2, Linktext, link, title1, title2
       {desc1 } <br /> {desc2}
     </Text>
    
-    <Button fontSize = "xl">
+    <Button className="text-xl bg-black">
       <Link href={link} >{Linktext}</Link>
     </Button>
    </Box>
