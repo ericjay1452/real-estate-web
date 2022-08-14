@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import HomeImg from "../images/Home.jpg"
 import { FetchApi, baseUri } from '../utils/FetchApi'
-import {Banner, Property} from '../components'
-import { Flex } from '@chakra-ui/react'
+import { Banner, Property } from '../components'
+import { Flex, Box } from '@chakra-ui/react'
 
 export default function Home({propertyForRent, propertyForSale}) {
 
