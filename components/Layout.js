@@ -1,5 +1,6 @@
 import Head from "next/head";
 import {Box} from "@chakra-ui/react"
+import { Footer, Navbar } from "../components";
 
 const Layout = ({children}) => {
             return(<>
@@ -9,8 +10,7 @@ const Layout = ({children}) => {
 
             <Box className="w-full bg-neutral-200 max-w-full">
              <header>
-                {/* <Navbar /> */}
-                hello
+             <Navbar />
              </header>
 
                 <main>
@@ -18,8 +18,8 @@ const Layout = ({children}) => {
                 </main>
              
              <footer>
-                {/* <Footer /> */}
-                hdelkkr
+            
+                <Footer />
              </footer>
             </Box>
             </>)
