@@ -19,7 +19,7 @@ export default function Home({propertyForRent, propertyForSale}) {
        desc2 = {"and many more"}
        Linktext = {"Explore Renting"}
        link = "/search?purpose=for-rent"
-       ImageUrl={HomeImg}
+       ImageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/220894616/44d36f6daf784c1d87f793c58cff9b79"
        /> 
 
        <Flex flexWrap = "wrap">
@@ -36,7 +36,7 @@ export default function Home({propertyForRent, propertyForSale}) {
        desc2 = {"and many more"}
        Linktext = {"Explore Buying"}
        link = "/search?purpose=for-sale"
-       ImageUrl={HomeImg}
+       ImageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/220894616/44d36f6daf784c1d87f793c58cff9b79"
        />
       
       <Flex flexWrap = "wrap">
