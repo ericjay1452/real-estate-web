@@ -19,11 +19,11 @@ const Property = ({property : {
 
     // const [ isTrue, setisTrue ] = useState(false);
       return (
-    <Link href = {`/property/${externalID}`} passHref>
+    <Link href = {`/property/${externalID}`} passHref className="shadow-md shadow-red-900">
 
     <Flex flexWrap={"wrap"} w= "400px" p={"5"} paddingTop = {"0"} 
     justifyContent = {"flex-start"} cursor = {"pointer"}>
-        <Box className = "w-full bg-neutral-600 block">
+        <Box className = "w-full">
          <Image src={coverPhoto ? coverPhoto.url : defaultImage} alt = {"House picture"}
           width = {"400"} height = {"260"} className = "max-w-full block relative"/>
         </Box>
