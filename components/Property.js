@@ -17,8 +17,8 @@ const Property = ({property : {
      area, agency, isVerified
 }}) =>{
 
-    const [ isTrue, setisTrue ] = useState(false);
-
+    // const [ isTrue, setisTrue ] = useState(false);
+      return (
     <Link href = {`/property/${externalID}`} passHref>
 
     <Flex flexWrap={"wrap"} w= "400px" p={"5"} paddingTop = {"0"} 
@@ -55,6 +55,6 @@ const Property = ({property : {
     </Flex>
 
     </Link>
-}
+)}
 
 export default Property
