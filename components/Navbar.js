@@ -5,9 +5,13 @@ import {BsSearch } from "react-icons/bs"
 import {Fikey } from "react-icons/fi"
 
 const Navbar = () =>{
-    return {
-
-    }
+    return (
+        <Flex padding={"2"}  className = "bg-slate-400">
+           <Box fontSize={"2xl"} fontWeight = {"bold"} color = {"blue.400"}>
+            <Link href="/" paddingLeft={"2"}>Real-Estate</Link> 
+           </Box>
+        </Flex>
+    )
 }
 
 export default Navbar;
