@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import { Box, Flex, Select, Input, Spinner, Text,Icon, Button } from "@chakra-ui/react";
 import { FcCancel } from "react-icons/fc";
 import Image from "next/image";
@@ -8,7 +8,16 @@ const SearchComp = () => {
     const [filters, setFilters ] = useState(filterData)
 
     const PropertiesSearched = ({filterValue}) => {
-     
+      const path = Router.pathname;
+      const { query } = Router;
+
+      const Values = getFilterValues(filterValue)
+
+      Values.forEach( (item)=> {
+        query[item.name] = item.value;
+      })
+
+      Router.push( {pathname : path, query})
     }
 
     return(
