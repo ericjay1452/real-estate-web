@@ -20,11 +20,13 @@ const Search = () => {
         fontWeight = {"black"}
         fontSize = {"lg"}
         >   
-          <Button borderRadius = {"0.75rem"} bg = {"gray.400"}>
+          <Button borderRadius = {"0.75rem"} bg = {"gray.400"} onClick = {() =>setSearchTerm(prevTerm =>(!prevTerm))}>
             <Text> Search Property by Filter</Text>
             <Icon as = {BsFilter} paddingLeft = {"2"} w = {"7"}/>
             </Button>
         </Flex>
+
+        {searchTerm && (<SearchComp />)}
       </Box>
     )
 }
