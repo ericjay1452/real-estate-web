@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import {Box, Button, Flex, flex, Icon, Text} from "@chakra-ui/react"
 import { BsFilter } from "react-icons/bs";
-import  {SearchComp}  from "../components";
+import  {Property, SearchComp}  from "../components";
 
 const search = () => {
     const [searchTerm, setSearchTerm ] = useState(false);
@@ -28,6 +28,23 @@ const search = () => {
         </Flex>
 
         {searchTerm && <SearchComp />}
+
+        <Text fontSize={"xl"} padding = {"4"} fontWeight = {"bold"} textAlign = {"center"}>
+           Property {Router.query.purpose}
+        </Text>
+
+        <Flex flexWrap={"wrap"}>
+            {[].map( (property) => <Property property={property} key = {property.id}/>)}
+        </Flex>
+
+        {[].length === 0 &&(
+            <Flex justifyContent={"center"} alignItems = {"center"} flexDirection = {"column"}
+             marginTop = {"5"} marginBottom = {"5"}
+            >
+
+            </Flex>
+        )}
+
       </Box>
     )
 }
